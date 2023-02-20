@@ -1,0 +1,272 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Fonts*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper-content {
+    background-color: #e2e8f0;
+    max-width: 1200px;
+    padding: 50px;
+    margin: 30px auto 20px auto;
+    border-radius: 50px;
+}
+
+.wrapper-header {
+    background-color: #e2e8f0;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 70px auto 20px auto;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.header-logo {
+    font-size: 22px;
+    color: #222;
+}
+
+.header-sign {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sign-in {
+    background-color: darkseagreen;
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    border: 1px solid darkseagreen;
+}
+
+.sign-up {
+    background-color: darkseagreen;
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    border: 1px solid darkseagreen;
+}
+
+.sign-up:hover {
+    background-color: #e2e8f0;
+    color: #222;
+    transition: all .2s ease-in-out;
+    border: 1px solid darkseagreen;
+}
+
+.sign-in:hover {
+    background-color: #e2e8f0;
+    color: #222;
+    transition: all .2s ease-in-out;
+    border: 1px solid darkseagreen;
+}
+
+.one-book {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    gap: 30px;
+}
+
+.book-author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.book-author-avatar {
+    background-color: #4a5568;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.book-author-name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.book-content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+}
+
+.book-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.book-img {
+    height: 250px;
+    width: 250px;
+    width: 100%;
+    background-color: #4a5568;
+    border-radius: 8px;
+}
+
+.book-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-title {
+    font-size: 26px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.book-description {
+    overflow: hidden;
+    position: relative;
+    height: 160px;
+}
+
+.book-description:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3em;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 100%);
+    pointer-events: none;
+}
+
+.book-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: gray;
+    font-weight: 400;
+}
+
+h1 {
+    color: #222;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+input {
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 450px;
+    margin: auto;
+    font-weight: 500;
+}
+
+input[type="submit"]{
+    background-color: darkseagreen;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 300px;
+}
+
+.errors {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: tomato;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.logout {
+    background-color: tomato;
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    border: 1px solid tomato;
+}
+
+.logout:hover {
+    background-color: #e2e8f0;
+    color: #222;
+    transition: all .2s ease-in-out;
+    border: 1px solid tomato;
+}
+
+.btn-more {
+    background-color: darkseagreen;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    border: 1px solid darkseagreen;
+    cursor: pointer;
+}
+
+.btn-more:hover {
+    background-color: #fff;
+    color: #222;
+    transition: all .2s ease-in-out;
+    border: 1px solid darkseagreen;
+}
+
+.add-book {
+    background-color: darkseagreen;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+
+.add-book:hover {
+    background-color: #e2e8f0;
+    transition: all .3s ease-in-out;
+    color: #222;
+    border: 1px solid darkseagreen;
+}
+
+
+
