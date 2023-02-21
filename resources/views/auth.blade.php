@@ -19,7 +19,7 @@
                 @csrf
                 <input type="text" name="username" placeholder="Username..">
                 <input type="text" name="password" placeholder="Password..">
-                <input type="submit" value="Войти">
+                <input type="submit" value="Sign-in">
             </form>
         </div>
     </div>

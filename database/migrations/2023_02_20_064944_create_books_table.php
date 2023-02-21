@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title', 255);
             $table->text('content');
-            $table->string('image_path'. 255)->nullable()->default(null);
+            $table->string('image_path', 255)->nullable()->default(null);
             $table->enum('status', ['published', 'unpublished', 'blocked'])->default('unpublished');
 
             $table->foreignId('author_id')

@@ -4,7 +4,7 @@
             <div class="header-logo">LIBRARY</div>
             @auth
                 <div class="header-btn">
-                    <a href="#" class="add-book">Добавить книгу</a>
+                    <a href="{{ route('add') }}" class="add-book">Добавить книгу</a>
                 </div>
             @endauth
             <div class="header-sign">

@@ -25,6 +25,12 @@ Route::get("/signup", function (){
     return view('reg');
 })->name('signup');
 
+Route::get("/add", function (){
+   return view('add');
+})->name('add');
+
+Route::middleware('auth')->get('/')
+
 Route::controller(\App\Http\Controllers\AuthController::class)->group(function () {
     Route::post('/signin', 'signin')->name('signin');
     Route::post('/signup', 'signup')->name('signup');
